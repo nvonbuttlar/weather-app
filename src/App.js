@@ -3,6 +3,7 @@ import axios from 'axios';
 import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather';
+import './config.js'
 
 
 
@@ -11,7 +12,7 @@ import Weather from './components/Weather';
 
 //This is the wrapper for the entire app
 
-const API_KEY = 'fce18dae82fb87e5c59cbab96ffc7db3'
+const API_KEY = config.MY_KEY;
 
 
 class App extends Component {

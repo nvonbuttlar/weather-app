@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import axios from 'axios';
+import Titles from './components/Titles';
+import Form from './components/Form';
+import Weather from './components/Weather';
+
+
+
+
+
+
+//This is the wrapper for the entire app
+
+const API_KEY = 'fce18dae82fb87e5c59cbab96ffc7db3'
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Titles />
+
       </div>
     );
   }
